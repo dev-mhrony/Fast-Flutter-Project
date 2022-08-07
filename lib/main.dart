@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
       title: 'Project 01',
       theme: ThemeData(
         //
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
       // App Name / Topbar Title
 
-      home: const MyHomePage(title: 'Hello Flutter Developer'),
+      home: const MyHomePage(title: 'My Fast Project'),
     );
   }
 }
@@ -36,12 +36,13 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  // Defolt Value in Count Project
+  int _counter = 999;
 
   void _incrementCounter() {
     setState(() {
       //App Fungtionality Section
-      _counter++;
+      _counter--;
     });
   }
 
@@ -50,6 +51,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // App Body Section
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(widget.title),
       ),
       body: Center(
@@ -58,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Hello Developer ! Count ++',
+              'Hello Developer ! Count --',
             ),
             Text(
               '$_counter',

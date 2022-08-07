@@ -65,19 +65,15 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-       
         title: Text(widget.title),
       ),
       body: Center(
-        
         child: Column(
-         
-
           // Text Show by App Body
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have pushed the button this many times:',
+              'Hello Developer ! Count ++',
             ),
             Text(
               '$_counter',

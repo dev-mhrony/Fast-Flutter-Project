@@ -37,12 +37,12 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   // Defolt Value in Count Project
-  int _counter = 999;
+  int _counter = 0;
 
   void _incrementCounter() {
     setState(() {
       //App Fungtionality Section
-      _counter--;
+      _counter++;
     });
   }
 
@@ -60,7 +60,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Hello Developer ! Count --',
+              'Hello Developer ! Count ++',
             ),
             Text(
               '$_counter',
